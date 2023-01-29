@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="京东JD.COM-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。">
+    <meta name="keywords" content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜,京东">
+    <title>京东(JD.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 按顺序引入：外链式样式表后写的生效 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 引入swiper css文件 -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- 引入自己的js文件 -->
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <!-- 快捷导航 -->
+    <div class="shortcut">
+        <div class="wrapper">
+            <ul class="fl">
+                <li>
+                    <a class="shortcut_ico" href="#">
+                        <i><img class="iconfont" src="./images/id.png" alt=""></i>
+                        <span class="dq">江苏</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="fr">
+                <li class="ttbar-login"><a href="">你好，请登录</a><a class="red" href="#">免费注册</a></li>
+                <li><a href="">我的订单</a></li>
+                <li><a href="">我的京东</a></li>
+                <li><a href="">京东会员</a></li>
+                <li><a href="">企业采购</a></li>
+                <li><a href="">客户服务</a></li>
+                <li><a href="">网址导航</a></li>
+                <li><a href="">手机京东</a></li>
+                <li><a href="">网站无障碍</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 头部 -->
+    <div class="header wrapper">
+        <div class="logo">
+            <h1><a href="#">京东，多快好省</a></h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="办公椅">
+            <script>
+                var text = document.querySelector('input')
+                text.onfocus = function() {
+                    if (this.placeholder === '办公椅') {
+                        this.placeholder = '';
+                    }
+                }
+                text.onblur = function() {
+                    if (this.placeholder === '') {
+                        this.placeholder = '办公椅';
+                    }
+                }
+            </script>
+            <span>搜索</span>
+
+        </div>
+        <div class="hotwords">
+            <ul>
+                <li><a class="syt_red" href="#">新风空调节</a></li>
+                <li><a href="#">周大福</a></li>
+                <li><a href="#">不止5折</a></li>
+                <li><a href="#">运动520</a></li>
+                <li><a href="#">剃须刀</a></li>
+                <li><a href="#">水杯</a></li>
+                <li><a href="#">潮电酷玩</a></li>
+                <li><a href="#">京东京造</a></li>
+            </ul>
+
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">秒杀 </a></li>
+                <li><a href="#">优惠券 </a></li>
+                <li><a href="#">PLUS会员 </a></li>
+                <li><a href="#">品牌闪购</a></li>
+                <li><a href="#">拍卖</a></li>
+                <li><a href="#">京东家电</a></li>
+                <li><a href="#">京东超市</a></li>
+                <li><a href="#">京东生鲜</a></li>
+                <li><a href="#">京东国际</a></li>
+                <li><a href="#">京东云</a></li>
+            </ul>
+        </div>
+        <div class="car">
+            <span>8</span>
+            <a href="#">我的购物车</a>
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="banner">
+        <div class="wrapper">
+            <div class="col1">
+                <ul class="menu">
+                    <li class="cate">
+                        <a href="#">家用电器</a>
+                    </li>
+                    <li class="cate">
+                        <a href="#">手机</a>
+                        <span>/</span>
+                        <a href="#">运营商</a>
+                        <span>/</span>
+                        <a href="#">数码</a>
+                    </li>
+                    <li class="cate">
+                        <a href="#">电脑</a>
+                        <span>/</span>
+                        <a href="#">办公</a>
+                    </li>
+                    <li class="cate">
+                        <a href="#">家居</a>
+                        <span>/</span>
+                        <a href="">家居</a>
+                        <span>/</span>
+                        <a href="#">家装</a>
+                        <span>/</span>
+                        <a href="#">厨具</a>
+                    </li>
+                    <li class="cate">
+                        <a href="#">男装</a>
+                        <span>/</span>
+                        <a href="#">女装</a>
+                        <span>/</span>
+                        <a href="#">童装</a>
+                        <span>/</span>
+                        <a href="#">内衣</a>
+
+                    </li>
+                    <li class="cate">
+                        <a href="#">美妆</a>
+                        <span>/</span>
+                        <a href="#">个护清洁</a>
+                        <span>/</span>
+                        <a href="#">宠物</a>
+
+                    </li>
+                    <li class="cate">
+                        <a href="#">女鞋</a>
+                        <span>/</span>
+                        <a href="#">箱包</a>
+                        <span>/</span>
+                        <a href="#">钟表</a>
+                        <span>/</span>
+                        <a href="#">珠宝</a>
+
+                    </li>
+                    <li class="cate">
+                        <a href="#">男鞋</a>
+                        <span>/</span>
+                        <a href="#">运动</a>
+                        <span>/</span>
+                        <a href="#">户外</a>
+
+                    </li>
+                    <li class="cate">
+                        <a href="#">房产</a>
+                        <span>/</span>
+                        <a href="#">汽车</a>
+                        <span>/</span>
+                        <a href="#">汽车用品</a>
+
+                    </li>
+                    <li class="cate">
+                        <a href="#">母婴</a>
+                        <span>/</span>
+                        <a href="#">玩具乐器</a>
+
+                    </li>
+                    <li class="cate">
+                        <a href="#">食品</a>
+                        <span>/</span>
+                        <a href="#">酒类</a>
+                        <span>/</span>
+                        <a href="#">生鲜</a>
+                        <span>/</span>
+                        <a href="#">特产</a>
+
+                    </li>
+                    <li class="cate">
+                        <a href="#">艺术</a>
+                        <span>/</span>
+                        <a href="#">礼品鲜花</a>
+                        <span>/</span>
+                        <a href="#">农资绿植</a>
+                        <li class="cate">
+                            <a href="#">医药保健</a>
+                            <span>/</span>
+                            <a href="#">计生情趣</a>
+                        </li>
+
+                    </li>
+                    <li class="cate">
+                        <a href="#">图书</a>
+                        <span>/</span>
+                        <a href="#">文娱</a>
+                        <span>/</span>
+                        <a href="#">教育</a>
+                        <span>/</span>
+                        <a href="#">电子书</a>
+
+                    </li>
+                    <li class="cate">
+                        <a href="#">机票</a>
+                        <span>/</span>
+                        <a href="#">酒店</a>
+                        <span>/</span>
+                        <a href="#">旅游</a>
+                        <span>/</span>
+                        <a href="#">生活</a>
+
+                    </li>
+                    <li class="cate">
+                        <a href="#">理财</a>
+                        <span>/</span>
+                        <a href="#">众筹</a>
+                        <span>/</span>
+                        <a href="#">白条</a>
+                        <span>/</span>
+                        <a href="#">保险</a>
+
+                    </li>
+                    <li class="cate">
+                        <a href="#">安装</a>
+                        <span>/</span>
+                        <a href="#">维修</a>
+                        <span>/</span>
+                        <a href="#">清洗</a>
+                        <span>/</span>
+                        <a href="#">二手</a>
+
+                    </li>
+                    <li class="cate">
+                        <a href="#">工业品</a>
+                </ul>
+            </div>
+            <div class="col2">
+                <div class="focus">
+                    <div class="main">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./images/1.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/4.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/5.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/6.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/7.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/8.jpg" alt=""></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 侧导航 -->
+            <div class="col3">
+                <div class="user">
+                    <div class="inner">
+                        <div>
+                            <div class="avat">
+                                <img src="./images/TX.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="show">
+                            <a href="#">Hi~欢迎逛京东！</a>
+                            <p>
+                                <a href="#">登录</a>
+                                <span>|</span>
+                                <a href="#">注册</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="profit">
+                        <a class="JD" href="#">新人福利</a>
+                        <a class="PLUS" href="#">PLUS会员</a>
+                    </div>
+                    <div class="news">
+                        <div class="hd">
+                            <h5 class="title">京东快报</h5>
+                            <a class="more" href="#">更多 ></a>
+                        </div>
+                        <ul class="list">
+                            <li class="item">
+                                <a href="#">
+                                    <span class="tag">最新</span>用vivo X80 Pro拍照，简单几步拍出专业效果
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span class="tag">推荐</span>用手机拍照总是不满意？vivo X80 Pro带你体验
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span class="tag">推荐</span>你是我的神！vivo X80，游戏手机中的一匹黑马！
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span class="tag">热评</span>解锁多样化吃法，楼兰蜜语新疆灰枣值得一试
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <div class="entry">
+                            <ul class="service_list">
+                                <li class="service_item">
+                                    <a class="service_lk" href="#">
+                                        <i><img class="service_img" src="./images/HF.png" alt="">
+                                            <!-- <img class="service_img_hover" src="./images/JDH.png" alt=""> -->
+                                            <span class="service_txt">话费</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="service_item">
+                                    <a class="service_lk" href="#">
+                                        <i><img class="service_img" src="./images/JP.png" alt="">
+                                            <!-- <img class="service_img_hover" src="./images/JPH.png" alt=""> -->
+                                            <span class="service_txt">机票</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="service_item">
+                                    <a class="service_lk" href="#">
+                                        <i><img class="service_img" src="./images/JD.png" alt="">
+                                            <!-- <img class="service_img_hover" src="" alt=""> -->
+                                            <span class="service_txt">酒店</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="service_item">
+                                    <a class="service_lk" href="#">
+                                        <i><img class="service_img" src="./images/YX.png" alt="">
+                                            <!-- <img class="service_img_hover" src="" alt=""> -->
+                                            <span class="service_txt">游戏</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="service_item">
+                                    <a class="service_lk" href="#">
+                                        <i><img class="service_img" src="./images/JYK.png" alt="">
+                                            <!-- <img class="service_img_hover" src="" alt=""> -->
+                                            <span class="service_txt">加油卡</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="service_item">
+                                    <a class="service_lk" href="#">
+                                        <i><img class="service_img" src="./images/HCP.png" alt="">
+                                            <!-- <img class="service_img_hover" src="" alt=""> -->
+                                            <span class="service_txt">火车票</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="service_item">
+                                    <a class="service_lk" href="#">
+                                        <i><img class="service_img" src="./images/ZCL.png" alt="">
+                                            <!-- <img class="service_img_hover" src="" alt=""> -->
+                                            <span class="service_txt">众筹</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="service_item">
+                                    <a class="service_lk" href="#">
+                                        <i><img class="service_img" src="./images/LC.png" alt="">
+                                            <!-- <img class="service_img_hover" src="" alt=""> -->
+                                            <span class="service_txt">理财</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="service_item">
+                                    <a class="service_lk" href="#">
+                                        <i><img class="service_img" src="./images/BT.png" alt="">
+                                            <!-- <img class="service_img_hover" src="" alt=""> -->
+                                            <span class="service_txt">白条</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="service_item">
+                                    <a class="service_lk" href="#">
+                                        <i><img class="service_img" src="./images/DYP.png" alt="">
+                                            <!-- <img class="service_img_hover" src="" alt=""> -->
+                                            <span class="service_txt">电影票</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="service_item">
+                                    <a class="service_lk" href="#">
+                                        <i><img class="service_img" src="./images/QYG.png" alt="">
+                                            <!-- <img class="service_img_hover" src="" alt=""> -->
+                                            <span class="service_txt">企业购</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="service_item">
+                                    <a class="service_lk" href="#">
+                                        <i><img class="service_img" src="./images/LPK.png" alt="">
+                                            <!-- <img class="service_img_hover" src="" alt=""> -->
+                                            <span class="service_txt">礼品卡</span>
+                                        </i>
+                                    </a>
+                                </li>
+
+                                </i>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 中间区域 -->
+    <div class="app">
+        <div class="j_app">
+            <div class="j_seckill">
+                <div class="seckill">
+                    <div class="seckill_inner">
+                        <a class="countdown" href="#">
+                            <div class="countdown-title">京东秒杀</div>
+                            <div>
+                                <div class="countdown-desc">
+                                    <strong>10:00</strong>点场 距结束
+                                </div>
+                                <span class="timmer countdown-main">
+                                    <span class="timmer_unit timmer_unit--hour">0</span>
+                                <span class="timmer_unit timmer_unit--minute">1</span>
+                                <span class="timmer_unit timmer_unit--second">2</span>
+                                </span>
+                                <script>
+                                    var hour = document.querySelector('.timmer_unit--hour');
+                                    var minute = document.querySelector('.timmer_unit--minute');
+                                    var second = document.querySelector('.timmer_unit--second');
+                                    var inputTime = +new Date('2029-7-19,10:00:00');
+                                    countDown();
+                                    setInterval(countDown, 1000);
+
+                                    function countDown() {
+                                        var nowTime = +new Date();
+                                        var times = (inputTime - nowTime) / 1000;
+                                        var h = parseInt(times / 60 / 60 % 24);
+                                        h = h < 10 ? '0' + h : h;
+                                        hour.innerHTML = h;
+                                        var m = parseInt(times / 60 % 60);
+                                        m = m < 10 ? '0' + m : m;
+                                        minute.innerHTML = m;
+                                        var s = parseInt(times % 60);
+                                        s = s < 10 ? '0' + s : s;
+                                        second.innerHTML = s;
+                                    }
+                                </script>
+                            </div>
+                        </a>
+                        <div class="seckill-list">
+                            <div class="slider">
+                                <button class="slider_control slider_control_prev">
+                                    <i class="iconfont" clstag=""><</i>
+                                </button>
+                                <div class="slider_list">
+                                    <div class="slider_wrapper">
+                                        <div data-index="-3" class="slider_item"></div>
+                                        <div data-index="-2" class="slider_item"></div>
+                                        <div data-index="-1" class="slider_item"></div>
+                                        <a class="slider_item seckill-item slider_active" href="#" title="洁云 抽纸 绒触感纸巾3层100抽软抽面巾纸 30包装 S码 自然无香 母婴可用（整箱销售）新老规格交替发货">
+                                            <div class="lazyimg lazyimg_loaded seckill-item__image">
+                                                <img src="./images/JY.jpg" alt="" class="lazyimg_img">
+                                            </div>
+                                            <h6 class="seckill-item__name">洁云 抽纸 绒触感纸巾3层100抽软抽面巾纸 30包装 S码 自然无香 母婴可用（整箱销售）新老规格交替发货</h6>
+                                            <div class="seckill-item__price">
+                                                <span class="price-origin">
+                                                    <i>￥</i>
+                                                    <span>86.9</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a class="slider_item seckill-item slider_active" href="#" title="洁云 抽纸 绒触感纸巾3层100抽软抽面巾纸 30包装 S码 自然无香 母婴可用（整箱销售）新老规格交替发货">
+                                            <div class="lazyimg lazyimg_loaded seckill-item__image">
+                                                <img src="./images/ML.jpg" alt="" class="lazyimg_img">
+                                            </div>
+                                            <h6 class="seckill-item__name">和路雪 梦龙 松露巧克力口味 冰淇淋家庭装 65g*4支 雪糕（新老包装 随机发货）</h6>
+                                            <div class="seckill-item__price">
+                                                <span class="price-origin">
+                                                    <i>￥</i>
+                                                    <span>86.9</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a class="slider_item seckill-item slider_active" href="#" title="洁云 抽纸 绒触感纸巾3层100抽软抽面巾纸 30包装 S码 自然无香 母婴可用（整箱销售）新老规格交替发货">
+                                            <div class="lazyimg lazyimg_loaded seckill-item__image">
+                                                <img src="./images/XM.jpg" alt="" class="lazyimg_img">
+                                            </div>
+                                            <h6 class="seckill-item__name">米家 小米电风扇落地扇家用 直流变频自然风大广角轻音节能电扇1X APP100档调节 上下俯仰39°可调</h6>
+                                            <div class="seckill-item__price">
+                                                <span class="price-origin">
+                                                    <i>￥</i>
+                                                    <span>86.9</span>
+                                                </span>
+                                            </div>
+                                        </a>
+
+
+                                    </div>
+                                </div>
+                                <button class="slider_control slider_control_next">
+                                    <i class="iconfont" clstag="">></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="seckill-brand">
+                            <a href="#" class="brand-item">
+                                <div class="item-image">
+                                    <div class="lazyimg lazyimg_loaded">
+                                        <img src=".//images/SB.jpg" alt="" class="lazyimg_img">
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <p class="item-info-title">商用办公专场</p>
+                                    <p class="item-info-promo">最高直降1000</p>
+                                    <div class="item-info-action">品类秒杀
+                                        <i class="iconfont">></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 版权区域 -->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="top">
+                <ul>
+                    <li>
+                        <span><strong>品类齐全，轻松购物</strong></span>
+                    </li>
+                    <li>
+                        <span><strong>多仓直发，极速配送</strong></span>
+                    </li>
+                    <li>
+                        <span><strong>正品行货，精致服务</strong></span>
+                    </li>
+                    <li>
+                        <span><strong>天天低价，畅选无忧</strong></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="help">
+                <div class="help-nav">
+                    <h5>购物指南</h5>
+                    <ul>
+                        <li>
+                            <a href="#">购物流程</a>
+                        </li>
+                        <li>
+                            <a href="#">会员介绍</a>
+                        </li>
+                        <li>
+                            <a href="#">生活旅行</a>
+                        </li>
+                        <li>
+                            <a href="#">常见问题</a>
+                        </li>
+                        <li>
+                            <a href="#">大家电</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a href="#">联系客服</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="help-nav">
+                    <h5>配送方式</h5>
+                    <ul>
+                        </li>
+                        <li>
+                            <a href="#">上门自提</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a href="#">211限时达</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a href="#">配送服务查询</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a href="#">配送费收取标准</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a href="#">海外配送</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="help-nav">
+                    <h5>支付方式</h5>
+                    <ul>
+                        <li>
+                            <a href="#">货到付款</a>
+                        </li>
+                        <li>
+                            <a href="#">在线支付</a>
+                        </li>
+                        <li>
+                            <a href="#">分期付款</a>
+                        </li>
+                        <li>
+                            <a href="#">公司转账</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="help-nav">
+                    <h5>售后服务</h5>
+                    <ul>
+                        <li>
+                            <a href="#">售后政策</a>
+                        </li>
+                        <li>
+                            <a href="#">价格保护</a>
+                        </li>
+                        <li>
+                            <a href="#">退款说明</a>
+                        </li>
+                        <li>
+                            <a href="#">返修/退换货</a>
+                        </li>
+                        <li>
+                            <a href="#">取消订单</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="help-nav">
+                    <h5>特色服务</h5>
+                    <ul>
+                        <li>
+                            <a href="#">夺宝岛</a>
+                        </li>
+                        <li>
+                            <a href="#">DIY装机</a>
+                        </li>
+                        <li>
+                            <a href="#">延保服务</a>
+                        </li>
+                        <li>
+                            <a href="#">京东E卡</a>
+                        </li>
+                        <li>
+                            <a href="#">京东通信</a>
+                        </li>
+                        <li>
+                            <a href="#">京东座智能</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="help-cover">
+                    <h5>京东自营覆盖区县</h5>
+                    <ul>
+                        <li>
+                            <p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。 </p>
+                        </li>
+                        <li>
+                            <a href="#">查看详情 ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>
+                    <a href="#">关于我们</a>
+                    <span>|</span>
+                    <a href="#">联系我们</a>
+                    <span>|</span>
+                    <a href="#">联系客服</a>
+                    <span>|</span>
+                    <a href="#">合作招商</a>
+                    <span>|</span>
+                    <a href="#">商家帮助</a>
+                    <span>|</span>
+                    <a href="#">营销中心</a>
+                    <span>|</span>
+                    <a href="#">手机京东</a>
+                    <span>|</span>
+                    <a href="#">友情链接</a>
+                    <span>|</span>
+                    <a href="#">销售联盟</a>
+                    <span>|</span>
+                    <a href="#">京东社区</a>
+                    <span>|</span>
+                    <a href="#">风险检测</a>
+                    <span>|</span>
+                    <a href="#">隐私政策</a>
+                    <span>|</span>
+                    <a href="#">京东公益</a>
+                    <span>|</span>
+                    <a href="#">English Site</a>
+                </p>
+                <div class="info ">
+                    <div>
+                        <p>
+                            <a href="#">京公网安备 11000002000088号 </a>
+                            <span>|</span>
+                            <a href="#">京ICP备11041704号</a>
+                            <span>|</span>
+                            <a href="#">lCP</a>
+                            <span>|</span>
+                            <a href="#">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+                            <span>|</span>
+                            <a href="#">新出发京零 字第大120007号</a>
+                        </p>
+                        <p>
+                            <a href="#">互联网出版许可证编号新出网证(京)字150号</a>
+                            <span>|</span>
+                            <a href="#">出版物经营许可证 </a>
+                            <span>|</span>
+                            <a href="#">网络文化经营许可证京网文[2020]6112-1201号</a>
+                            <span>|</span>
+                            <a href="#">违法和不良信息举报电话：4006561155</a>
+                            <span>|</span>
+                        </p>
+                        <p>
+                            <a href="#">Copyright © 2004 - 2022  京东JD.com 版权所有</a>
+                            <span>|</span>
+                            <a href="#">消费者维权热线：4006067733</a>
+                            <span>|</span>
+                            <a href="#">经营证照</a>
+                            <span>|</span>
+                            <a href="#">(京)网械平台备字(2018)第00003号</a>
+                            <span>|</span>
+                            <a href="#">营业执照 </a>
+                            <span>|</span>
+                            <a href="#">增值电信业务经营许可证</a>
+                            <span>|</span>
+                        </p>
+                    </div>>
+                    <div class="inter">
+                        <p>
+                            <a class="LK" href="#">Global Site</a>
+                            <span>|</span>
+                            <a class="LK" href="#">Сайт России</a>
+                            <span>|</span>
+                            <a class="LK" href="#">Situs Indonesia</a>
+                            <span>|</span>
+                            <a class="LK" href="#">Sitio de España</a>
+                            <span>|</span>
+                            <a class="LK" href="#">เว็บไซต์ประเทศไทย</a>
+                            <span>|</span>
+                        </p>
+                        <div>
+                            <p>
+                                <a href="#">京东旗下网站： 京东钱包</a>
+                                <span>|</span>
+                                <a href="#">京东云</a>
+                                <span>|</span>
+                                <a href="#">网络内容从业人员违法违规行为举报电话：4006561155-3</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="auth">
+                    <a class="ico_2" href="#"></a>
+                    <a class="ico_3" href="#"></a>
+                    <a class="ico_4" href="#"></a>
+                    <a class="ico_5" href="#"></a>
+                    <a class="ico_6" href="#"></a>
+                    <a class="ico_7" href="#"></a>
+                    <a class="ico_8" href="#"></a>
+                    <a class="ico_9" href="#"></a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
